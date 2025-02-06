@@ -22,7 +22,7 @@ int main()
 {
     Entity e1, e2;
 
-    // result is reference of original value so can't changed, and result itself have to be const
+    // result var is reference of original value so can't changed, so result itself have to be const
     const std::string &result = e1.getX();  
     
     std::string result1 = e2.getX();   // result is copying the original value, can change
